@@ -24,6 +24,7 @@ NotesView.prototype.showSlide = function (slideIndex) {
     ;
 
   self.notesElement.innerHTML = slideView.notesElement.innerHTML;
+  self.notesElement.scrollTop = self.notesElement.scrollHeight;
 
   if (nextSlideView) {
     self.notesPreviewElement.innerHTML = nextSlideView.notesElement.innerHTML;
